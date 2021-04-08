@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+ <!-- main-page-->
+    <div class="main-page">
+            <div  style="background-image:url('./images/photo.jpg');background-size: cover; background-repeat: no-repeat; background-position: bottom; height: 95vh; width: 100%;">
+                <section id="header">
+                    <article>
+                        <div class="left">
+                            <h1 style="padding: 13px;"><i id="icon" class="far fa-book-open"></i>BOOK MANAGEMENT SYSTEM</h1>
+                        </div>
+                        <div class="right">
+                            <a href="#" class="add"><button>Add</button> </a>
+                            <a href="#" class="search"><button>Search</button></a>
+                        </div> 
+                    </article>
+                </section>
+            </div>
+    </div>
+
+   
+
+    <div class="adding">
+        <div class="container hidden">
+            <section id="header">
+                <article>
+                    <div class="left">
+                        <h1 style="padding: 13px;"><i id="icon" class="far fa-book-open"></i>BOOK MANAGEMENT SYSTEM</h1>
+                    </div>
+                    <div class="right">
+                        <a href="#" class="back1"><button>Back</button></a>
+                    </div> 
+                </article>
+            </section>
+            <form id="addBookForm"  action="" onsubmit="return false" style="margin: 16px 34px;" >
+                <label for="">Id</label>
+                <input  id="id" type="number"  style="margin-left: 39px;"><br> <br>
+                <label for="">Title</label>
+                <input  id="title" type="text" style="margin-left: 22px;"><br><br>
+                <label for="">Author</label>
+                <input  id="author" type="text" style="margin-left: 2px;"><br><br>
+                <label for="">Ratings</label>
+                <input  id="ratings" type="number"><br><br>
+                <label for="">Cost</label>
+                <input  id="cost" type="number" style="margin-left: 24px;"><br><br>
+                <button id="submit" style="padding: 7px; border-radius: 7px; letter-spacing: 1px;">Submit</button>
+            </form>
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Ratings</th>
+                    <th>Cost</th>
+                    <th>Action</th>
+                </tr>
+                <tbody id="mainTable1"></tbody>
+            </table>
+        </div>    
+    </div>
+
+    <div class="searching hidden">
+            <section id="header">
+                <article>
+                    <div class="left">
+                        <h1 style="padding: 13px;"><i id="icon" class="far fa-book-open"></i>BOOK MANAGEMENT SYSTEM</h1>
+                    </div>
+                    <div class="right">
+                        <a href="#" class="back2"><button>Back</button></a>
+                    </div> 
+                </article>
+            </section>
+            <!-- <h3 style="margin-left: 30px; margin-top: 15px;">Search Books...</h2> -->
+                <select style="margin-left: 30px; margin-top: 15px; padding: 6px; border-radius: 8px;" name="" id="selection">
+                    <option value="id">Id</option>
+                    <option value="title">Title</option>
+                    <option value="author">Author</option>
+                    <option value="ratings">Ratings</option>
+                    <option value="cost">Cost</option>
+                </select>
+                <input style="padding: 6px; border-radius: 8px;" placeholder="search books.." id="searchBooks" type="text">
+                <button style="padding: 6px; border-radius: 8px;" class="submit">search</button>
+                <table>
+                    <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Ratings</th>
+                        <th>Cost</th>
+                        <!-- <th>Action</th> -->
+                    </tr>
+                    <tbody id="mainTable2"></tbody>
+                </table>
+        </div>
+    </div>
+  
+    <script src="./addBooks.js"></script>
+    <script src="./index.js"></script>
+</html>
