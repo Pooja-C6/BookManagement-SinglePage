@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/searchBook.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="header" style="background-color: lightgray; height: 55px;">
+        <article>
+            <div class="left">
+                <h1 style="padding: 13px;"><i id="icon" class="far fa-book-open"></i>BOOK MANAGEMENT SYSTEM</h1>
+            </div>
+        </article>
+        </section>
+    <h3 style="margin-left: 30px; margin-top: 15px;">Search Books...</h2>
+    <select style="margin-left: 30px; margin-top: 15px; padding: 6px; border-radius: 8px;" name="" id="selection">
+        <option value="id">id</option>
+        <option value="title">title</option>
+        <option value="author">author</option>
+        <option value="ratings">ratings</option>
+        <option value="cost">cost</option>
+    </select>
+    <input style="padding: 6px; border-radius: 8px;" placeholder="search books.." id="searchBooks" type="text">
+    <button style="padding: 6px; border-radius: 8px;" onclick="search()">search</button>
+    <table id="table">
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Ratings</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+    <script src="./bookManagerApp.js"></script>
+</body>
+</html>

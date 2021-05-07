@@ -1,0 +1,107 @@
+/* // @import "./fun"; */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  /* // @include body1(); */
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#header {
+  height: 55px;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+#header article {
+  width: 95%;
+  margin: 0 auto;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.left {
+  width: 70%;
+  height: 55px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1px;
+}
+
+.right {
+  width: 30%;
+  height: 55px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: -30px;
+}
+
+.right a {
+  margin-top: 70px;
+  padding: 10px 10px 10px 10px;
+}
+
+.right button {
+  margin: 10px 2px;
+}
+
+.right a button {
+  width: 100px;
+  height: 35px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: lightslategrey;
+  letter-spacing: 1px;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.left h1 {
+  padding: 13px;
+}
+
+h1 {
+  color: black;
+  letter-spacing: 1px;
+  margin-left: 7px;
+  margin-top: 100px;
+  margin: auto auto;
+}
+#table, tr, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  -webkit-box-shadow: 5px 10px;
+          box-shadow: 5px 10px;
+  padding: 13px;
+  margin-left: 29px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+tr:hover {
+  background-color: rgb;
+}
+/*# sourceMappingURL=bookLists.css.map */

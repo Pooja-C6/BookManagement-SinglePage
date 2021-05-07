@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/addBooks.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="header" style="background-color: lightgray; height: 55px;">
+        <article>
+            <div class="left">
+                <h1 style="padding: 13px;"><i id="icon" class="far fa-book-open"></i>BOOK MANAGEMENT SYSTEM</h1>
+            </div>
+            <div class="right">
+                <a href="./deleteBook.html"><button id="button" onclick="deleteBook">Delete</button></a>
+            </div> 
+        </article>
+    </section>
+    <form id="addBookForm" class="form-control" action="" onsubmit="return false" style="margin: 16px 34px;" >
+        <label for="">Id:</label>
+        <input  id="id" type="number" style="margin-left: 35px;"><br> <br>
+        <label for="">Title:</label>
+        <input  id="title" type="text" style="margin-left: 18px;"><br><br>
+        <label for="">Author:</label>
+        <input  id="author" type="text" style="margin-left: 2px;"><br><br>
+        <label for="">Ratings:</label>
+        <input  id="ratings" type="number"><br><br>
+        <label for="">Cost:</label>
+        <input  id="cost" type="number" style="margin-left: 18px;"><br><br>
+        <button id="submit" >Submit</button>
+    </form>
+    <table style="text-align: center;" id="table" style="margin: 16px 34px;">
+        <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Ratings</th>
+        <th>Cost</th>
+        <th>Actions</th>
+    </tr>
+   
+    <tbody id="mainTable" >
+    </tbody>
+   
+    <script src="./BookManagerApp.js"></script>
+</body>
+</html>

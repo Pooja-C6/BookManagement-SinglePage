@@ -1,0 +1,94 @@
+*{
+    margin:0pc;
+    padding:0px;
+    box-sizing: border-box;
+  }
+
+  #header {
+    height: 55px;
+    width: 100%;
+    background-color: lightgrey;
+  }
+  
+  #header article {
+    width: 95%;
+    margin: 0 auto;
+    height: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .left {
+    width: 70%;
+    height: 55px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1px;
+  }
+  
+  .right {
+    width: 30%;
+    height: 55px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: -50px;
+    margin-left: 135px;
+  }
+  
+  .right a {
+    margin-top: 70px;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .right button {
+    margin: 10px 2px;
+  }
+  
+  .right a button {
+    width: 100px;
+    height: 35px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: lightslategrey;
+    letter-spacing: 1px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .left icon {
+    color: black;
+  }
+  
+  h1 {
+    color: black;
+    letter-spacing: 1px;
+  }
+  /*# sourceMappingURL=style.css.map */
+
+  #table, tr,th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+    margin-left: 29px;
+    text-align: center;
+    margin-top: 30px;
+    // row-gap: 18px;
+  }
+
+  #table{
+    box-shadow: 5px 7px;
+  }
